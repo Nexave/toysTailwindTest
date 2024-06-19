@@ -1,0 +1,190 @@
+// @import "common/fonts";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "components/+";
+@import "common/+";
+@layer base {
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"] {
+        -webkit-appearance: none;
+        -moz-appearance: textfield !important;
+    }
+}
+
+.main-container {
+    max-width: calc(1920px - 300px + 80px);
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    @media (max-width: 767px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+:root {
+    --font1: "Roboto", sans-serif;
+}
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: var(--font1);
+    background: #fffbf6;
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+* {
+    box-sizing: border-box;
+}
+main {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+}
+.svg-hover-violet {
+    &:hover {
+        svg path {
+            stroke: rgb(139 92 246);
+        }
+    }
+}
+.svg-active-violet {
+    svg path {
+        stroke: rgb(139 92 246);
+    }
+}
+a {
+    transition: 0.4s ease;
+}
+a:hover {
+    color: #6f40dd;
+}
+.swiper {
+    width: 100%;
+    max-width: 100%;
+    // max-height: 100vh;
+    // CSS Grid/Flexbox bug size workaround
+    // @see https://github.com/kenwheeler/slick/issues/982
+    min-height: 0;
+    min-width: 0;
+}
+.text-xxs {
+    font-size: 10px;
+    line-height: 1.1;
+}
+
+.block-title {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 32px;
+    @media (max-width: 1279px) {
+        margin-bottom: 16px;
+        font-size: 24px;
+    }
+    @media (max-width: 767px) {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+}
+.basket-icon {
+    background-image: url(../../img/icons/basket-white-fill-icon.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 6px;
+}
+.sorting-block-list{
+    .sorting-item{
+       
+        &::after{
+        position: absolute;
+        width: calc(100% + 16px);
+        left: -8px;
+        bottom: -22px;
+        content: "";
+        height: 3px;
+        background: rgb(20 184 166);
+        border-radius: 8px;
+        opacity: 0;
+        -webkit-transition: .4s;
+        -o-transition: .4s;
+        transition: .4s;
+        }
+        &:hover,&.active{
+            font-weight: 500;
+            color: inherit;
+        }
+        &:hover::after,&.active::after{
+            opacity: 1;
+        }
+    }
+}
+.contacts-form{
+    --color-main: #6f40dd;
+    --color-accent: #00b598;
+    --color-white: #ffffff;
+    .square-checkbox{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        input {
+          display: none;
+        }
+
+        .text {
+          margin-bottom: 0;
+          color: #2E2E2E;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+          padding-right: 5px;
+        }
+
+        .icon {
+          width: 20px;
+          height: 20px;
+          border-radius: 4px;
+          border: 1px solid var(--color-accent);
+          background: #FFF;
+          margin-right: 4px;
+          position: relative;
+          flex-shrink: 0;
+          display: block;
+          margin-right: 10px;
+          &:after {
+            position: absolute;
+            content: '';
+            background: url("../img/icons/check-icon.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            width: 14px;
+            height: 14px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            transition: transform 0.3s ease;
+          }
+        }
+
+        input:checked + .icon {
+          background: var(--color-accent);
+          border-color: var(--color-accent);
+
+          &:after {
+            transform: translate(-50%, -50%) scale(1);
+          }
+        }
+      }
+}

@@ -1,0 +1,134 @@
+.auth {
+    --color-accent: #00B598;
+    .input-wrapper {
+        .input {
+            border-radius: 8px;
+            border: 1px solid rgba(46, 46, 46, 0.2);
+            background: #fff;
+            padding: 16px 56px;
+            display: block;
+            width: 100%;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            @media(max-width:767px) {
+                font-size: 14px;
+                padding: 12px 44px;
+            }
+            &:focus {
+                border: 1px solid #6f40dd;
+                background: rgba(111, 64, 221, 0.05);
+                outline: 1px solid #6f40dd;
+            }
+            &-error {
+                border: 1px solid #f00;
+                background: rgba(255, 0, 0, 0.1);
+            }
+        }
+        .error-span {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            margin-top: 8px;
+            color: #f00;
+            display: none;
+            @media(max-width:767px) {
+                font-size: 12px;
+            }
+        }
+        .input-error + .error-span {
+            display: block;
+        }
+        .auth-icon {
+            width: 32px;
+            height: 32px;
+            position: absolute;
+            top: 10px;
+            left: 12px;
+            @media(max-width:767px) {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+    .toggle-password {
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        top: 10px;
+        right: 12px;
+        cursor: pointer;
+        @media(max-width:767px) {
+            width: 24px;
+            height: 24px;
+        }
+        .icon-hide {
+            display: none;
+        }
+        &.active {
+            .icon-show {
+                display: none;
+            }
+            .icon-hide {
+                display: block;
+            }
+        }
+    }
+
+
+    
+    .custom-checkbox {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+        input {
+            display: none;
+        }
+        .name {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            @media(max-width:767px) {
+                font-size: 12px;
+            }
+        }
+        .icon {
+            width: 20px;
+            height: 20px;
+            border-radius: 0.4rem;
+            border: 1px solid rgba(46, 46, 46, 0.5);
+            background: #fff;
+            margin-right: 8px;
+            position: relative;
+            display: block;
+
+            &:after {
+                position: absolute;
+                content: "";
+                background: url("./img/icons/check-icon.svg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                width: 14px;
+                height: 14px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) scale(0);
+                transition: transform 0.3s ease;
+            }
+        }
+
+        input:checked + .icon {
+            background: var(--color-accent);
+            border-color: var(--color-accent);
+
+            &:after {
+                transform: translate(-50%, -50%) scale(1);
+            }
+        }
+    }
+    
+}

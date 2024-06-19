@@ -1,0 +1,51 @@
+{% extends 'layouts/main.twig' %}
+{% block content %}
+	<div class="main-container">
+		<div class="tablet-catalog-button button inline-flex xl:hidden text-base md:text-lg px-8 py-2 md:py-3 mb-0 md:mb-2 w-full">
+			<img src="img/icons/category-icon.svg" alt="" class="me-2 md:me-3 w-6 md:w-8 h-6 md:h-8 shrink-0">Каталог
+																																																																																															                    товарів
+		</div>
+	</div>
+	<div class="auth py-2 md:py-4 ipad:py-12">
+        <div class="main-container">
+            <div class="auth-block-wrapper w-[calc(100%+30px)] md:w-full max-w-[732px] rounded-[20px] border md:border-[2px] border-teal-500 -mx-[15px] md:mx-auto py-5 md:py-12 px-4 md:px-[82px] bg-[linear-gradient(117deg,rgba(111,64,221,.05)2.32%,rgba(0,181,152,.05)96.72%)] backdrop-blur-lg">
+                <form class="auth-form mb-3 md:mb-4">
+                    <div class="text-xl md:text-[32px] font-light text-center mb-6 md:mb-8">АВТОРИЗАЦІЯ</div>
+                    <div class="input-wrapper relative w-full mb-2 md:mb-4">
+                        <img src="./img/icons/mail-auth-icon.svg" alt="" class="auth-icon">
+                        <input type="text" class="input" placeholder="E-mail">
+                    </div>
+                    <div class="input-wrapper relative w-full mb-2 md:mb-4">
+                        <img src="./img/icons/lock-auth-icon.svg" alt="" class="auth-icon">
+                        <div class="toggle-password active">
+                            <img src="./img/icons/eye-icon.svg" alt="" class="icon-show">
+                            <img src="./img/icons/eye-off-icon.svg" alt="" class="icon-hide">
+                        </div>
+                        <input type="text" class="input" placeholder="Пароль">
+
+                    </div>
+                    <div class="flex mb-4 md:mb-6 items-center justify-between">
+                        <label for="5" class="custom-checkbox">
+                            <input type="checkbox" id="5">
+                            <span class="icon"></span>
+                            <span class="name">Запам'ятайте мене</span>
+                        </label>
+                        <a href="" class="text-xs md:text-sm font-light duration-300 ease-in-out hover:underline hover:text-violet-600">Забули пароль?</a>
+                    </div>
+                    <div class="button-wrapper">
+                        <button class="button button-green text-base md:text-lg px-8 py-2 md:py-3 w-full">Увійти</button>
+                    </div>
+                </form>
+                <div class="auth-block-bottom">
+                    <div class="text-xs md:text-sm text-center font-light mb-2 md:mb-3">Увійти за допомогою</div>
+                    <div class="flex justify-center items-center mb-3 md:mb-6">
+                        <a href="" class="w-8 me-2"><img src="img/icons/facebook-icon.svg" alt="" class="w-full h-auto object-contain" ></a>
+                        <a href="" class="w-8 me-2"><img src="img/icons/google-icon.svg" alt="" class="w-full h-auto object-contain"></a>
+                    </div>
+                    <div class="text-sm md:text-base font-light text-center">У вас ще немає облікового запису? <a href="" class="text-violet-600 hover:underline font-normal text-nowrap">Пройти реєстрацію</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

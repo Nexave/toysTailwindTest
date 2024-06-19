@@ -1,0 +1,99 @@
+.desc-catalog {
+    --text-primary: #2E2E2E;
+    --text-secondary: #969696;
+    --color-main: #6F40DD;
+   
+    &-content {
+      font-size: 20px;
+      line-height: 1.1;
+      @media(max-width:1023px) {
+        font-size: 16px;
+      }
+      @media(max-width:767px) {
+        font-size: 14px;
+      }
+  
+      h2 {
+        font-size: 28px;
+        line-height: 1.3;
+        margin-bottom: 32px;
+        font-weight: 500;
+        @media(max-width:1023px) {
+          font-size: 24px;
+          margin-bottom: 2.4rem;
+        }
+        @media(max-width:767px) {
+          font-size: 18px;
+          margin-bottom: 18px;
+        }
+      }
+  
+      p {
+  
+        margin-bottom: 20px;
+  
+        @media(max-width:767px) {
+  
+          margin-bottom: 16px;
+        }
+      }
+  
+      h3 {
+        margin-bottom: 2.6rem;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        @media(max-width:1099px) {
+          margin-top: 24px;
+          margin-bottom: 24px;
+        }
+        @media(max-width:767px) {
+          font-size: 18px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+      }
+  
+      ol {
+        padding-left: 15px;
+        list-style-type: decimal;
+        li{
+          margin-bottom: 16px;
+        }
+      }
+  
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+  
+        li {
+          position: relative;
+          padding-left: 22px;
+          margin-bottom: 16px;
+  
+          &:after {
+            position: absolute;
+            content: '';
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: 1px solid var(--text-primary);
+            left: 0;
+            top: 5px;
+            @media(max-width:767px){
+              top: 2.5px;
+            }
+          }
+        }
+      }
+  
+      hr {
+        margin-top: 24px;
+        margin-bottom: 24px;
+        border-top: 1px solid var(--color-main);
+      }
+    }
+  }
+  

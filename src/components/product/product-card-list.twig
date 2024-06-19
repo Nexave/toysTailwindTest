@@ -1,0 +1,29 @@
+<section class="card-list-block pt-2 md:pt-4 xl:pt-6 pb-2 md:pb-4 xl:pb-6 ">
+	<div class="main-container">
+		<h2 class="block-title">{{ blockTitle }}</h2>
+		<div class="card-list grid grid-cols-2 md:grid-cols-3  ipad:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-[2px] md:gap-2 xl:gap-5 mb-5 -mx-5 md:mx-0 {% if customClass is defined %} {{ customClass }} {% endif %}">
+			{% include "product-card.twig" %}
+			{% include "product-card-sale.twig" %}
+			{% include "product-card.twig" %}
+			{% include "product-card-sale.twig" %}
+			{% include "product-card.twig" %}
+			{% include "product-card-sale.twig" %}
+			{% include "product-card.twig" %}
+			{% include "product-card-sale.twig" %}
+			{% include "product-card.twig" %}
+			{% include "product-card-sale.twig" %}
+			{% include "product-card.twig" %}
+			{% include "product-card-sale.twig" %}
+			{% include "product-card.twig" %}
+			{% include "product-card-sale.twig" %}
+			{% include "product-card.twig" %}
+			{% include "product-card-sale.twig" %}
+			{% include "product-card.twig" %}
+			{% include "product-card-sale.twig" %}
+		</div>
+		<div class="button-wrapper flex justify-center">
+			<button class="button button-green-transparent more-items px-2 md:px-8 py-2 md:py-3 text-sm md:text-lg">Показати більше</button>
+		</div>
+	</div>
+
+</section>

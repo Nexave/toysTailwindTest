@@ -1,0 +1,110 @@
+{% extends 'layouts/main.twig' %}
+{% block content %}
+	<div class="main-container">
+		<div class="tablet-catalog-button button inline-flex xl:hidden text-base md:text-lg px-8 py-2 md:py-3 mb-0 md:mb-2 w-full">
+			<img src="img/icons/category-icon.svg" alt="" class="me-2 md:me-3 w-6 md:w-8 h-6 md:h-8 shrink-0">Каталог
+																																																																																															                    товарів
+		</div>
+	</div>
+	<div class="breadcrumbs-wrapper pb-2 ipad:pb-4">
+		<div class="main-container">
+			<ul class="breadcrumbs flex flex-wrap pt-6 items-center ">
+				<li class="breadcrumbs-item text-sm font-light inline-flex items-center mb-1">
+					<a href="" class=""><img src="img/icons/home-icon.svg" alt="" class="text-violet-600 ">
+					</a>
+				</li>
+
+				<li class="breadcrumbs-item text-sm font-light inline-flex items-center mb-1 text-violet-600">
+					<a href="">Контакти
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<section class="pt-2 ipad:pt-3 pb-2 md:pb-5 ipad:pb-6">
+		<div class="main-container">
+			<div class="grid [grid-template-areas:'additional''subscribe''form'] xl:[grid-template-areas:'additional_form''subscribe_form'] gap-[14px] md:gap-5 xl:gap-[32px_20px] mb-5">
+				<div class="[grid-area:additional] mb-3 md:mb-0">
+					<h1 class="text-xl md:text-2xl xl:text-[32px] mb-2 md:mb-4 xl:mb-8 font-medium">Контакти</h1>
+					<div>
+						<div class="text-sm md:text-2xl  mb-2 md:mb-4 flex items-center ">
+							<div class="w-5 md:w-8 h-5 md:h-8 me-2">
+								<img src="./img/icons/location-icon.svg" alt="" class="w-full h-full object-contain">
+							</div>
+							<div class="item-text">Адреса:
+								<b>Адреса складу самовивезення м. Дніпро</b>
+							</div>
+						</div>
+						<div class="text-sm md:text-2xl  mb-2 md:mb-4 flex items-center ">
+							<div class="w-5 md:w-8 h-5 md:h-8 me-2">
+								<img src="img/icons/time-icon.svg" alt="">
+							</div>
+							<div class="item-text">Час роботи:
+								<b>Пн - Вс: 9.00 - 18.00</b>
+							</div>
+						</div>
+						<div class="text-sm md:text-2xl  mb-2 md:mb-4 flex items-center ">
+							<div class="w-5 md:w-8 h-5 md:h-8 me-2">
+								<img src="./img/icons/phone-icon-green.svg" alt="">
+							</div>
+							<div class="item-text">Телефон:
+								<b>
+									<a href="tel:380636563681">+38 063 656 36 81</a>
+								</b>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="[grid-area:subscribe] border-violet-400 border p-5 xl:p-10 bg-white rounded-2xl text-violet-900 w-full max-w-full xl:max-w-[847px] pt-5 xl:pt8 pe-5 xl:pe-11 pb-5 xl:pb-2 ps-5 xl:ps-10 ">
+					<div class="text-xl md:text-2xl xl:text-[32px] mb-2 md:mb-4 xl:mb-8 font-medium">Підписуйся на нас у соціальних мережах!</div>
+					<div class="flex justify-between">
+						<div>
+							<div class="text-base xl:text-xl mb-4 xl:mb-6">
+								Підпишіться  на наші соц мережі та отримуйте інформацію про найближчі знижки та акції. Будьте в курсі про новинки та знижки.
+							</div>
+							<div class="flex items-center justify-center gap-4">
+								<a href="" class="w-11 h-11 flex justify-center items-center"><img src="img/icons/instagram-icon.svg" alt="" class="w-full h-full object-contain"></a>
+								<a href="" class="w-11 h-11 flex justify-center items-cente"><img src="img/icons/youtube-icon.svg" alt="" class="w-full h-full object-contain"></a>
+							</div>
+						</div>
+						<img src="img/contacts/beast.png" alt="" class="w-full max-w-[226px] h-auto object-contain hidden md:block">
+					</div>
+				</div>
+				<div class="[grid-area:form] rounded-2xl bg-white p-5 xl:p-10 border border-violet-500 contacts-form">
+					<div class="text-lg md:text-2xl font-medium mb-3">Зв'язатися з нами</div>
+					<div class="text-sm md:text-base mb-6">Є питання чи побажання? Потрібна інформація про іграшки? Ми завжди відкриті до спілкування! Звертайтеся за будь-яким зручним для Вас каналом зв'язку.</div>
+					<form action="" class="contacts-form">
+						<div class="mb-4">
+							<label for="" class="block text-sm text-gray-600 mb-2">Ваше Ім'я*</label>
+							<input type="text" class="text-sm md:text-base border border-emerald-300 bg-white rounded-[6px] py-4 px-3 w-full">
+						</div>
+						<div class="mb-4">
+							<label for="" class="block text-sm text-gray-600 mb-2">Ваш телефон*</label>
+							<input type="text" class="text-sm md:text-base border border-emerald-300 bg-white rounded-[6px] py-4 px-3 w-full" placeholder="+380 (__) ___-__-__">
+						</div>
+						<div class="mb-4">
+							<label for="" class="block text-sm text-gray-600 mb-2">Ваше Ім'я*</label>
+							<input type="email" class="text-sm md:text-base border border-emerald-300 bg-white rounded-[6px] py-4 px-3 w-full">
+						</div>
+						<div class="mb-4">
+							<label for="checkbox" class="square-checkbox">
+								<input type="checkbox" id="checkbox">
+								<span class="icon"></span>
+								<span class="text">Згоден на обробку персональних данних</span>
+							</label>
+						</div>
+
+						<div class="w-full md:w-auto">
+							<button class="button button-green text-base md:text-lg px-8 py-2 md:py-3  w-full md:w-auto ">Надіслати форму</button>
+						</div>
+					</form>
+				</div>
+
+			</div>
+			<div class="overflow-hidden rounded-2xl">
+				<img src="./img/contacts/maps.png" alt="" class="w-full h-auto">
+			</div>
+		</div>
+	</section>
+
+{% endblock %}

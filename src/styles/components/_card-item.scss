@@ -1,0 +1,166 @@
+.card-item {
+  @media (max-width: 767px) {
+    &:nth-child(odd) {
+      padding-left: 20px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      .badges {
+        left: 20px;
+      }
+    }
+    &:nth-child(even) {
+      padding-right: 20px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      .additional {
+        right: 20px;
+      }
+    }
+  }
+  .button-basket {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 2px solid #00b598;
+    background: 0 0;
+    cursor: pointer;
+    @media (max-width: 1100px) {
+      background: #00b598;
+    }
+    .check-icon {
+      display: none;
+    }
+    .basket-icon {
+      @media (max-width: 1100px) {
+        background-image: url(../../img/icons/basket-white-fill-icon.svg) !important;
+      }
+    }
+    &.active {
+      background: #00b598;
+      pointer-events: none;
+      .basket-icon {
+        display: none;
+      }
+      .check-icon {
+        display: flex;
+      }
+      span {
+        display: none;
+      }
+    }
+  }
+  .button-click {
+    @media (max-width: 1100px) {
+      display: none;
+    }
+  }
+}
+.card-list {
+  .card-item {
+    &:nth-child(n + 13) {
+      display: none;
+    }
+    @media (max-width: 1535px) {
+      &:nth-child(n + 11) {
+        display: none;
+      }
+    }
+    @media (max-width: 1279px) {
+      &:nth-child(n + 9) {
+        display: none;
+      }
+    }
+    @media (max-width: 1100px) {
+      &:nth-child(n + 7) {
+        display: none;
+      }
+    }
+    @media (max-width: 767px) {
+      &:nth-child(n + 5) {
+        display: none;
+      }
+    }
+  }
+  &.active {
+    .card-item {
+      &:nth-child(n + 13) {
+        display: flex;
+      }
+      @media (max-width: 1535px) {
+        &:nth-child(n + 11) {
+          display: flex;
+        }
+      }
+      @media (max-width: 1279px) {
+        &:nth-child(n + 9) {
+          display: flex;
+        }
+      }
+      @media (max-width: 1100px) {
+        &:nth-child(n + 7) {
+          display: flex;
+        }
+      }
+      @media (max-width: 767px) {
+        &:nth-child(n + 5) {
+          display: flex;
+        }
+      }
+    }
+  }
+  &.one-row {
+    .card-item {
+      &:nth-child(n + 7) {
+        display: none;
+      }
+      @media (max-width: 1535px) {
+        &:nth-child(n + 6) {
+          display: none;
+        }
+      }
+      @media (max-width: 1279px) {
+        &:nth-child(n + 5) {
+          display: none;
+        }
+      }
+      @media (max-width: 1100px) {
+        &:nth-child(n + 4) {
+          display: none;
+        }
+      }
+      @media (max-width: 767px) {
+        &:nth-child(n + 3) {
+          display: none;
+        }
+      }
+    }
+    &.active {
+      .card-item {
+        &:nth-child(n + 7) {
+          display: flex;
+        }
+        @media (max-width: 1535px) {
+          &:nth-child(n + 6) {
+            display: flex;
+          }
+        }
+        @media (max-width: 1279px) {
+          &:nth-child(n + 5) {
+            display: flex;
+          }
+        }
+        @media (max-width: 1100px) {
+          &:nth-child(n + 4) {
+            display: flex;
+          }
+        }
+        @media (max-width: 767px) {
+          &:nth-child(n + 3) {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+}

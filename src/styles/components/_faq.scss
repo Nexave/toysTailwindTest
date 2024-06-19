@@ -1,0 +1,111 @@
+.faq{
+   
+    &-accordion{
+        --color-accent: #00B598;
+        --color-white: #ffffff;
+      width: 100%;
+      
+      &-item{
+        border-radius: 8px;
+        border: 1px solid rgba(46, 46, 46, 0.20);
+        background: var(--color-white);
+        margin-bottom: 21px;
+        width: 100%;
+        @media(max-width:1099px){
+          margin-bottom: 10px;
+        }
+        @media(max-width:767px){
+          margin-bottom: 15px;
+        }
+        &:last-child{
+          margin-bottom: 0;
+        }
+        &-title{
+          padding: 30px;
+          padding-right: 40px;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          cursor: pointer;
+          position: relative;
+          @media(max-width:1099px){
+            font-size: 20px;
+            padding: 16px;
+            padding-right: 50px;
+          }
+          @media(max-width:767px){
+            font-size: 16px ;
+            padding-left: 12px;
+          }
+          &.active{
+            border-bottom: 1px solid rgba(46, 46, 46, 0.20) ;
+            & + .faq-accordion-item-content-wrapper{
+             max-height: 800px;
+            }
+            .icon:after{
+              transform: rotateX(90deg);
+            }
+          }
+          .icon{
+            width: 24px;
+            height: 24px;
+            border-radius: 3px;
+            background-color: var(--color-accent);
+            right: 10px;
+            top: 10px;
+            position: absolute;
+            @media(max-width:1099px){
+              top: 12px;
+              right: 12px;
+            }
+            &:before{
+              position: absolute;
+              content: '';
+              width: 12px;
+              height: 2px;
+              border-radius: 2px;
+              background-color: var(--color-white);
+              top: 11px;
+              left: 6px;
+            }
+            &:after{
+              position: absolute;
+              content: '';
+              width: 2px;
+              height: 12px;
+              border-radius: 2px;
+              background-color: var(--color-white);
+              top: 6px;
+              left: 11px;
+              transition: 0.4s linear;
+              transform: rotateX(0deg);
+            }
+          }
+  
+        }
+        &-content{
+          padding: 30px;
+          max-width: 783px;
+          transition: 0.4s ease ;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          @media(max-width:1099px){
+            padding: 16px;
+            font-size: 16px;
+          }
+          @media(max-width:767px){
+            font-size: 14px;
+          }
+          &-wrapper{
+           max-height: 0;
+            overflow: hidden;
+            transition: 0.4s linear;
+          }
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,64 @@
+<div class="header-catalog-menu w-full h-full left-0 top-0 py-5 overflow-y-auto overflow-x-hidden bg-[#fffbf6]  z-50 fixed opacity-0 pointer-events-none transition-opacity duration-300">
+	<div class="pb-5 md:pb-6 px-3 md:px-10 flex  border-[rgba(46, 46, 46, .1)] border-b  text-teal-500 mb-6">
+		<div class="text-xl md:text-2xl font-medium ">Каталог товарів</div>
+		<div class="close-button w-8 h-8 ms-auto shrink-0 cursor-pointer ">
+			<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none">
+				<g clip-path="url(#clip0_22_33364)" stroke="#00B598" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 8L8 24M8 8l16 16"/></g>
+				<defs>
+					<clipPath id="clip0_22_33364"><path fill="#fff" d="M0 0h32v32H0z"/></clipPath>
+				</defs>
+			</svg>
+		</div>
+	</div>
+	<div class="header-catalog-menu-inner px-3 md:px-10  grid grid-cols-3 md:grid-cols-6 gap-2 ">
+		{% set j = 10 %}
+		{% for i in range(1, j) %}
+			<div class="header-catalog-menu-item flex flex-col items-center rounded-lg border-violet-600 border break-words px-5 pt-3 pb-2 bg-white">
+			<svg width="32" class="w-10 h-10" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<g clip-path="url(#clip0_1_48049)">
+					<path d="M20 10.668H20.0139" stroke="#6F40DD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M4 8C4 6.93913 4.42143 5.92172 5.17157 5.17157C5.92172 4.42143 6.93913 4 8 4H24C25.0609 4 26.0783 4.42143 26.8284 5.17157C27.5786 5.92172 28 6.93913 28 8V24C28 25.0609 27.5786 26.0783 26.8284 26.8284C26.0783 27.5786 25.0609 28 24 28H8C6.93913 28 5.92172 27.5786 5.17157 26.8284C4.42143 26.0783 4 25.0609 4 24V8Z" stroke="#6F40DD" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M4 21.3331L10.6667 14.6664C11.904 13.4758 13.4293 13.4758 14.6667 14.6664L21.3333 21.3331" stroke="#6F40DD" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M18.6641 18.6677L19.9974 17.3344C21.2347 16.1437 22.7601 16.1437 23.9974 17.3344L27.9974 21.3344" stroke="#6F40DD" stroke-linecap="round" stroke-linejoin="round"/>
+				</g>
+				<defs>
+					<clipPath id="clip0_1_48049">
+						<rect width="32" height="32" fill="white"/>
+					</clipPath>
+				</defs>
+			</svg>
+			<div class="text-xs font-normal  text-violet-600 text-center">Картини за номерами</div>
+			<div class="item-menu left-0 top-0 w-full h-full z-50 bg-[#fffbf6] pb-10 translate-x-[120vw] transition-transform duration-300 fixed pt-5 overflow-y-auto overflow-x-hidden">
+				<div class="pb-5 md:pb-6 px-3 md:px-10 flex  border-[rgba(46, 46, 46, .1)] border-b  text-teal-500 mb-6">
+					<div class="text-xl md:text-2xl font-medium ">М'які іграшки</div>
+					<div class="close-button w-8 h-8 ms-auto shrink-0 cursor-pointer ">
+						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none">
+							<g clip-path="url(#clip0_22_33364)" stroke="#00B598" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 8L8 24M8 8l16 16"/></g>
+							<defs>
+								<clipPath id="clip0_22_33364"><path fill="#fff" d="M0 0h32v32H0z"/></clipPath>
+							</defs>
+						</svg>
+					</div>
+				</div>
+				<div class="button-back text-base text-teal-500 inline-flex items-center justify-center mb-2 ms-5 md:ms-10 border border-teal-500 rounded-lg bg-white py-3 px-4">
+					<svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" fill="none"><path d="M7 13L1 7l6-6" stroke="#00B598" stroke-linecap="round" stroke-linejoin="round"/></svg>
+					<span class="ms-4">Усі категорії
+					</div>
+				</span>
+				<ul class="item-menu-list">
+					{% set k = 10 %}
+					{% for i in range(1, k) %}
+						<li class="px-5 md:px-10 py-2 md:py-5 border-[rgba(46, 46, 46, .1)] border-b">
+							<a href="" class="flex items-center w-full text-violet-600 text-xs md:text-base">Ляльковий театр
+								<svg class="w-2 h-4 ms-auto shrink-0" xmlns="http://www.w3.org/2000/svg" width="8" height="14" fill="none"><path d="M1 13l6-6-6-6" stroke="#2E2E2E" stroke-linecap="round" stroke-linejoin="round"/></svg>
+							</a>
+						</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+		{% endfor %}
+		
+		
+	</div>
+</div>

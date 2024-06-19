@@ -1,0 +1,82 @@
+{% extends 'layouts/main.twig' %}
+{% block content %}
+	<div class="main-container">
+		<div class="tablet-catalog-button button inline-flex xl:hidden text-base md:text-lg px-8 py-2 md:py-3 mb-0 md:mb-2 w-full">
+			<img src="img/icons/category-icon.svg" alt="" class="me-2 md:me-3 w-6 md:w-8 h-6 md:h-8 shrink-0">Каталог
+																																																																																																											                    товарів
+		</div>
+	</div>
+	<div class="pt-2 ipad:pt-[14px] pb-[10px]">
+		<div class="main-container">
+			<div class="flex items-center ipad:hidden ">
+				<div class="mt-6 md:mt-0 mb-4 text-xl md:text-2xl">Список бажань</div>
+			</div>
+			<div class="rounded-2xl flex w-[calc(100%+40px)] md:w-[calc(100%+80px)] xl:w-full -ms-5 md:-ms-10 xl:-ms-0 -me-5 md:-me-10  xl:-me-0 ipad:border ipad:borrder-gray-300 bg-white ipad:shadow-[4px_4px_15px_0_rgba(46,46,46,.1);]">
+				<div class="w-[300px] shrink-0 hidden ipad:block">
+					<ul class="p-6 border-b border-b-gray-300">
+						<li class="mb-[6px]">
+							<a href="" class="py-2 px-5 flex items-center rounded-lg duration-300 ease-in-out hover:bg-violet-100"><img src="./img/icons/cabinet-user.svg" alt="" class="w-8 h-auto shrink-0 me-1">Мої
+																								                                особисті дані</a>
+						</li>
+						<li class="mb-[6px]">
+							<a href="" class="py-2 px-5 flex items-center rounded-lg duration-300 ease-in-out hover:bg-violet-100"><img src="./img/icons/cabinet-order.svg" alt="" class="w-8 h-auto shrink-0 me-1">Мої
+																								                                замовлення</a>
+						</li>
+						<li class="mb-[6px] ">
+							<a href="" class="py-2 px-5 flex items-center rounded-lg duration-300 ease-in-out hover:bg-violet-100 bg-violet-100 "><img src="./img/icons/cabinet-heart.svg" alt="" class="w-8 h-auto shrink-0 me-1">Список бажань</a>
+						</li>
+						<li class="cabinet-menu-item">
+							<a href="" class="py-2 px-5 flex items-center rounded-lg duration-300 ease-in-out hover:bg-violet-100"><img src="./img/icons/cabinet-review.svg" alt="" class="w-8 h-auto shrink-0 me-1">Мої
+																								                                відгуки</a>
+						</li>
+					</ul>
+					<a href="" class="inline-block mt-4 ms-11 mb-7">Вийти з акаунту</a>
+				</div>
+				<div class="ipad:border-s ipad:border-s-gray-300">
+
+					<div class="cabinet-wishlist">
+						<div class="border border-gray-300 shadow-[4px_4px_15px_0_rgba(46,46,46,.1)] rounded-2xl ipad:rounded-none">
+							<div class="grid grid-cols-2 md:grid-cols-3  ipad:grid-cols-4 2xl:grid-cols-5 gap-[2px] md:gap-[10px] xl:gap-5 pt-5 md:px-10 xl:px-5 pb-9">
+								{% include "./components/product/product-card.twig" %}
+								{% include "./components/product/product-card.twig" %}
+								{% include "./components/product/product-card.twig" %}
+								{% include "./components/product/product-card.twig" %}
+								{% include "./components/product/product-card.twig" %}
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="pb-2 md:pb-4 ipad:pb-6 pt-2 ">
+		<div class="main-container">
+			<div class="rounded-2xl bg-white px-3 md:px-4 xl:px-8 py-4 md:py-6 xlpy-8 shadow-[4px_4px_15px_0_rgba(46,46,46,.1)] ">
+				<div class="mb-4 md:mb-6 xl:mb-10  text-violet-900 font-medium text-base md:text-2xl xl:text-[32px] text-start xl:text-center">Поділись списком бажань з друзями та рідними за посиланням нижче</div>
+				<div class="flex flex-col ipad:flex-row max-w-[910px] gap-3 xl:gap-5 items-center mx-auto">
+					<div class="rounded-lg bg-gray-100 w-full overflow-hidden text-sm md:text-xl font-light  pt-3 ipad:pt-2 pe-3 ipad:pe-4 pb-3  ipad:pb-3 ps-3 ipad:ps-10 ">
+						<span class="block overflow-hidden text-nowrap text-ellipsis" id="copy-link">https://toys4you.com.ua/mebel-muzykalnaya-salon-aksessuary-100899</span>
+					</div>
+					<div class="button button-green text-base md:text-lg px-8 py-2 md:py-3 button-copy" data-tooltip="Скопировано" data-clipboard-action="copy" data-clipboard-target="#copy-link">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+							<g clip-path="url(#clip0_330_10134)">
+								<path d="M8 10C8 9.46957 8.21071 8.96086 8.58579 8.58579C8.96086 8.21071 9.46957 8 10 8H18C18.5304 8 19.0391 8.21071 19.4142 8.58579C19.7893 8.96086 20 9.46957 20 10V18C20 18.5304 19.7893 19.0391 19.4142 19.4142C19.0391 19.7893 18.5304 20 18 20H10C9.46957 20 8.96086 19.7893 8.58579 19.4142C8.21071 19.0391 8 18.5304 8 18V10Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M16 8V6C16 5.46957 15.7893 4.96086 15.4142 4.58579C15.0391 4.21071 14.5304 4 14 4H6C5.46957 4 4.96086 4.21071 4.58579 4.58579C4.21071 4.96086 4 5.46957 4 6V14C4 14.5304 4.21071 15.0391 4.58579 15.4142C4.96086 15.7893 5.46957 16 6 16H8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							</g>
+							<defs>
+								<clipPath id="clip0_330_10134">
+									<rect width="24" height="24" fill="white"></rect>
+								</clipPath>
+							</defs>
+						</svg>
+						Скопіювати
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+
+{% endblock %}

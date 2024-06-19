@@ -1,0 +1,102 @@
+{% extends 'layouts/main.twig' %}
+{% block content %}
+	<div class="main-container">
+		<div class="tablet-catalog-button button inline-flex xl:hidden text-base md:text-lg px-8 py-2 md:py-3 mb-0 md:mb-2 w-full">
+			<img src="img/icons/category-icon.svg" alt="" class="me-2 md:me-3 w-6 md:w-8 h-6 md:h-8 shrink-0">Каталог
+																																																																																																					                    товарів
+		</div>
+	</div>
+	<div class="breadcrumbs-wrapper pb-2 ipad:pb-4">
+		<div class="main-container">
+			<ul class="breadcrumbs flex flex-wrap pt-6 items-center ">
+				<li class="breadcrumbs-item text-sm font-light inline-flex items-center mb-1">
+					<a href="" class=""><img src="img/icons/home-icon.svg" alt="" class="text-violet-600 ">
+					</a>
+				</li>
+
+				<li class="breadcrumbs-item text-sm font-light inline-flex items-center mb-1 text-violet-600">
+					<a href="">Бренды
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<section class="pt-2 ipad:pt-3 pb-2 md:pb-5 ipad:pb-6">
+		<div class="main-container">
+			<h1 class="text-xl md:text-2xl xl:text-[32px] mb-2 md:mb-4 xl:mb-8 font-medium">Бренды
+			</h1>
+			<div class="brands-search">
+				<form action="" class="max-w-[360px] md:max-w-[648px] w-full mb-4 md:mb-6 ipad:mb-8 relative">
+					<input type="text" class="ps-3 md:ps-14  pe-3 md:pe-4  py-2 md:py-4 text-xs md:text-base block w-full rounded-lg border border-gray-300 outline-0" placeholder="Пошук...">
+					<button class="hidden md:block  w-8 h-8 absolute left-4 top-1/2 -translate-y-1/2" style="background: url(./img/icons/search-icon.svg) center / contain no-repeat;"></button>
+				</form>
+			</div>
+			<div class="grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-[2px] md:gap-[10px] xl:gap-5 mb-2 md:mb-3 xl:mb-5 ">
+				<div class="py-6 px-3 xl:px-6 rounded-lg overflow-hidden relative h-[90px] md:h-[170px] justify-center border border-gray-300 bg-white flex flex-col items-center hover:shadow-lg ease-in-out duration-300 group">
+					<img src="./img/main/lego.png" alt="" class="w-full h-full max-w-[142px] object-contain">
+					<div class="hidden md:block text-xl group-hover:text-violet-600 duration-300">LEGO</div>
+					<a href="" class="absolute left-0 top-0 w-full h-full z-10" ></a>
+				</div>
+				<div class="py-6 px-3 xl:px-6 rounded-lg overflow-hidden relative h-[90px] md:h-[170px] justify-center border border-gray-300 bg-white flex flex-col items-center hover:shadow-lg ease-in-out duration-300 group">
+					<img src="./img/main/fisher-price.png" alt="" class="w-full h-full max-w-[142px] object-contain">
+					<div class="hidden md:block text-xl group-hover:text-violet-600 duration-300">Fisher-price</div>
+					<a href="" class="absolute left-0 top-0 w-full h-full z-10"></a>
+				</div>
+				<div class="py-6 px-3 xl:px-6 rounded-lg overflow-hidden relative h-[90px] md:h-[170px] justify-center border border-gray-300 bg-white flex flex-col items-center hover:shadow-lg ease-in-out duration-300 group">
+					<img src="./img/main/marvel.png" alt="" class="w-full h-full max-w-[142px] object-contain">
+					<div class="hidden md:block text-xl group-hover:text-violet-600 duration-300">MARVEL</div>
+					<a href="" class="absolute left-0 top-0 w-full h-full z-10"></a>
+				</div>
+				<div class="py-6 px-3 xl:px-6 rounded-lg overflow-hidden relative h-[90px] md:h-[170px] justify-center border border-gray-300 bg-white flex flex-col items-center hover:shadow-lg ease-in-out duration-300 group">
+					<img src="./img/main/barbie.png" alt="" class="w-full h-full max-w-[142px] object-contain">
+					<div class="hidden md:block text-xl group-hover:text-violet-600 duration-300">Barbie</div>
+					<a href="" class="absolute left-0 top-0 w-full h-full z-10"></a>
+				</div>
+				<div class="py-6 px-3 xl:px-6 rounded-lg overflow-hidden relative h-[90px] md:h-[170px] justify-center border border-gray-300 bg-white flex flex-col items-center hover:shadow-lg ease-in-out duration-300 group">
+					<img src="./img/main/lol.png" alt="" class="w-full h-full max-w-[142px] object-contain">
+					<div class="hidden md:block text-xl group-hover:text-violet-600 duration-300">LOL SURPRISE</div>
+					<a href="" class="absolute left-0 top-0 w-full h-full z-10"></a>
+				</div>
+				<div class="py-6 px-3 xl:px-6 rounded-lg overflow-hidden relative h-[90px] md:h-[170px] justify-center border border-gray-300 bg-white flex flex-col items-center hover:shadow-lg ease-in-out duration-300 group">
+					<img src="./img/main/baby-born.png" alt="" class="w-full h-full max-w-[142px] object-contain">
+					<div class="hidden md:block text-xl group-hover:text-violet-600 duration-300">BABY born</div>
+					<a href="" class="absolute left-0 top-0 w-full h-full z-10"></a>
+				</div>
+				<div class="py-6 px-3 xl:px-6 rounded-lg overflow-hidden relative h-[90px] md:h-[170px] justify-center border border-gray-300 bg-white flex flex-col items-center hover:shadow-lg ease-in-out duration-300 group">
+					<img src="./img/main/disney.png" alt="" class="w-full h-full max-w-[142px] object-contain">
+					<div class="hidden md:block text-xl group-hover:text-violet-600 duration-300">Disney</div>
+					<a href="" class="absolute left-0 top-0 w-full h-full z-10"></a>
+				</div>
+				<div class="py-6 px-3 xl:px-6 rounded-lg overflow-hidden relative h-[90px] md:h-[170px] justify-center border border-gray-300 bg-white flex flex-col items-center hover:shadow-lg ease-in-out duration-300 group">
+					<img src="./img/main/harry-potter.png" alt="" class="brand-icon">
+					<div class="hidden md:block text-xl group-hover:text-violet-600 duration-300">Harry-Potter</div>
+					<a href="" class="absolute left-0 top-0 w-full h-full z-10"></a>
+				</div>
+				<div class="py-6 px-3 xl:px-6 rounded-lg overflow-hidden relative h-[90px] md:h-[170px] justify-center border border-gray-300 bg-white flex flex-col items-center hover:shadow-lg ease-in-out duration-300 group">
+					<img src="./img/main/star-wars.png" alt="" class="w-full h-full max-w-[142px] object-contain">
+					<div class="hidden md:block text-xl group-hover:text-violet-600 duration-300">STAR WARS</div>
+					<a href="" class="absolute left-0 top-0 w-full h-full z-10"></a>
+				</div>
+				<div class="py-6 px-3 xl:px-6 rounded-lg overflow-hidden relative h-[90px] md:h-[170px] justify-center border border-gray-300 bg-white flex flex-col items-center hover:shadow-lg ease-in-out duration-300 group">
+					<img src="./img/main/barbie.png" alt="" class="w-full h-full max-w-[142px] object-contain">
+					<div class="hidden md:block text-xl group-hover:text-violet-600 duration-300">Barbie</div>
+					<a href="" class="absolute left-0 top-0 w-full h-full z-10"></a>
+				</div>
+				<div class="py-6 px-3 xl:px-6 rounded-lg overflow-hidden relative h-[90px] md:h-[170px] justify-center border border-gray-300 bg-white flex flex-col items-center hover:shadow-lg ease-in-out duration-300 group">
+					<img src="./img/main/marvel.png" alt="" class="w-full h-full max-w-[142px] object-contain">
+					<div class="hidden md:block text-xl group-hover:text-violet-600 duration-300">MARVEL</div>
+					<a href="" class="absolute left-0 top-0 w-full h-full z-10"></a>
+				</div>
+				<div class="py-6 px-3 xl:px-6 rounded-lg overflow-hidden relative h-[90px] md:h-[170px] justify-center border border-gray-300 bg-white flex flex-col items-center hover:shadow-lg ease-in-out duration-300 group">
+					<img src="./img/main/fisher-price.png" alt="" class="w-full h-full max-w-[142px] object-contain">
+					<div class="hidden md:block text-xl group-hover:text-violet-600 duration-300">Fisher-price</div>
+					<a href="" class="absolute left-0 top-0 w-full h-full z-10"></a>
+				</div>
+			</div>
+			<div class="button-wrapper flex justify-center">
+				<button class="button button-green-transparent more-items px-2 md:px-8 py-2 md:py-3 text-sm md:text-lg ">Показати більше</button>
+			</div>
+		</div>
+	</section>
+
+{% endblock %}

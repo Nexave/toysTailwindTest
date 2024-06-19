@@ -1,0 +1,171 @@
+{% extends 'layouts/main.twig' %}
+{% block content %}
+	<div class="main-container">
+		<div class="tablet-catalog-button button inline-flex xl:hidden text-base md:text-lg px-8 py-2 md:py-3 mb-0 md:mb-2 w-full">
+			<img src="img/icons/category-icon.svg" alt="" class="me-2 md:me-3 w-6 md:w-8 h-6 md:h-8 shrink-0">Каталог
+																																																																																																														                    товарів
+		</div>
+	</div>
+	<div class="pt-2 ipad:pt-[14px] pb-[10px]">
+		<div class="main-container">
+			<div class="flex items-center ipad:hidden ">
+				<div class="mt-6 md:mt-0 mb-4 text-xl md:text-2xl">Мої замовлення</div>
+			</div>
+			<div class="rounded-2xl flex w-[calc(100%+40px)] md:w-[calc(100%+80px)]  2xl:w-[calc(100%+30px)] -ms-5 md:-ms-10  2xl:-ms-0 -me-5 md:-me-10  2xl:-me-0 ipad:border ipad:borrder-gray-300 bg-white ipad:shadow-[4px_4px_15px_0_rgba(46,46,46,.1);] overflow-hidden">
+				<div class="md:w-[250px] 2xl:w-[300px] shrink-0 hidden ipad:block">
+					<ul class="p-6 border-b border-b-gray-300">
+						<li class="mb-[6px]">
+							<a href="" class="py-2 px-5 flex items-center rounded-lg duration-300 ease-in-out hover:bg-violet-100 bg-violet-100"><img src="./img/icons/cabinet-user.svg" alt="" class="w-8 h-auto shrink-0 me-1">Мої
+																																                                особисті дані</a>
+						</li>
+						<li class="mb-[6px]">
+							<a href="" class="py-2 px-5 flex items-center rounded-lg duration-300 ease-in-out hover:bg-violet-100"><img src="./img/icons/cabinet-order.svg" alt="" class="w-8 h-auto shrink-0 me-1">Мої
+																																                                замовлення</a>
+						</li>
+						<li class="mb-[6px] ">
+							<a href="" class="py-2 px-5 flex items-center rounded-lg duration-300 ease-in-out hover:bg-violet-100  "><img src="./img/icons/cabinet-heart.svg" alt="" class="w-8 h-auto shrink-0 me-1">Список бажань</a>
+						</li>
+						<li class="cabinet-menu-item">
+							<a href="" class="py-2 px-5 flex items-center rounded-lg duration-300 ease-in-out hover:bg-violet-100"><img src="./img/icons/cabinet-review.svg" alt="" class="w-8 h-auto shrink-0 me-1">Мої
+																																                                відгуки</a>
+						</li>
+					</ul>
+					<a href="" class="inline-block mt-4 ms-11 mb-7">Вийти з акаунту</a>
+				</div>
+				<div class="ipad:border-s ipad:border-s-gray-300 w-full">
+
+					<div class="border ipad:border-none border-gray-300  shadow-[4px_4px_15px_0_rgba(46,46,46,.1)] rounded-2xl ipad:rounded-none bg-white py-4  px-5 ipad:px-6">
+						<div class="cabinet-orders">
+                            <div class="flex items-center justify-between mb-5 ">
+                                <div class="hidden xl:block font-medium text-[32px] ">Мої замовлення</div>
+                                <div class="mobile-sorting border rounded-lg border-teal-500 text-teal-500 w-full md:w-auto ms-auto">
+                                    <div class="current-sorting px-7 py-3 w-full" ><span class="decor"> <span style="max-width:100%">За останні 30 днів</span></span></div>
+                                    <ul class="list">
+                                        <li class="list-item "><a href="">За весь час</a></li>
+                                        <li class="list-item current"><a href="">За останні 30 днів</a></li>
+                                        <li class="list-item"><a href="">За останні 6 місяців</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="cabinet-orders-list">
+                                <div class="cabinet-order-item">
+                                    <div class="status done"></div>
+                                    <div class="item-data">
+                                        <div class="item-data-additional">№ 100 100 100 від 15.05.23</div>
+                                        <div class="item-data-status">Виконано</div>
+                                    </div>
+                                    <div class="item-img-wrapper">
+                                        <img src="img/product/product.png" alt="">
+                                    </div>
+                                    <div class="item-name">
+                                        <a href="" class="item-name-link">ДЕРЕВ'ЯНА ІГРАШКА ПАЛЬЧИКОВИЙ ЛАБІРИНТ РАДУГА. HONGJI TOYS HJD93101A HONGJI TOYS HJD93101A</a>
+                                    </div>
+                                    <div class="opener"></div>
+                                    <div class="item-description name">
+                                        <div class="item-description-title">Одержувач</div>
+                                        <div class="item-description-name">Вікторія Маринчук</div>
+                                    </div>
+                                    <div class="item-description quantity">
+                                        <div class="item-description-title">Кількість</div>
+                                        <div class="item-description-name">1</div>
+                                    </div>
+                                    <div class="item-description price">
+                                        <div class="item-description-title">Сума замовлення</div>
+                                        <div class="item-description-price sale">
+                                            <div class="item-price">1499 грн</div>
+                                            <div class="item-price-old">2099 грн</div>
+                                        </div>
+                                    </div>
+                                    <div class="item-description delivery">
+                                        <div class="item-description-title">Доставка</div>
+                                        <div class="item-description-name">Безкоштовно</div>
+                                    </div>
+                                    <div class="item-description total">
+                                        <div class="item-description-title">Загальна сума</div>
+                                        <div class="item-description-total">699 грн</div>
+                                    </div>
+                                </div>
+                                <div class="cabinet-order-item">
+                                    <div class="status done"></div>
+                                    <div class="item-data">
+                                        <div class="item-data-additional">№ 100 100 100 від 15.05.23</div>
+                                        <div class="item-data-status">Виконано</div>
+                                    </div>
+                                    <div class="item-img-wrapper">
+                                        <img src="img/product/product.png" alt="">
+                                    </div>
+                                    <div class="item-name">
+                                        <a href="" class="item-name-link">ДЕРЕВ'ЯНА ІГРАШКА ПАЛЬЧИКОВИЙ ЛАБІРИНТ РАДУГА. HONGJI TOYS HJD93101A HONGJI TOYS HJD93101A</a>
+                                    </div>
+                                    <div class="opener"></div>
+                                    <div class="item-description name">
+                                        <div class="item-description-title">Одержувач</div>
+                                        <div class="item-description-name">Вікторія Маринчук</div>
+                                    </div>
+                                    <div class="item-description quantity">
+                                        <div class="item-description-title">Кількість</div>
+                                        <div class="item-description-name">1</div>
+                                    </div>
+                                    <div class="item-description price">
+                                        <div class="item-description-title">Сума замовлення</div>
+                                        <div class="item-description-price ">
+                                            <div class="item-price">1499 грн</div>
+                                        </div>
+                                    </div>
+                                    <div class="item-description delivery">
+                                        <div class="item-description-title">Доставка</div>
+                                        <div class="item-description-name">Безкоштовно</div>
+                                    </div>
+                                    <div class="item-description total">
+                                        <div class="item-description-title">Загальна сума</div>
+                                        <div class="item-description-total">699 грн</div>
+                                    </div>
+                                </div>
+                                <div class="cabinet-order-item">
+                                    <div class="status canceled"></div>
+                                    <div class="item-data">
+                                        <div class="item-data-additional">№ 100 100 100 від 15.05.23</div>
+                                        <div class="item-data-status">Скасовано користувачем</div>
+                                    </div>
+                                    <div class="item-img-wrapper">
+                                        <img src="img/product/product.png" alt="">
+                                    </div>
+                                    <div class="item-name">
+                                        <a href="" class="item-name-link">ДЕРЕВ'ЯНА ІГРАШКА ПАЛЬЧИКОВИЙ ЛАБІРИНТ РАДУГА. HONGJI TOYS HJD93101A HONGJI TOYS HJD93101A</a>
+                                    </div>
+                                    <div class="opener"></div>
+                                    <div class="item-description name">
+                                        <div class="item-description-title">Одержувач</div>
+                                        <div class="item-description-name">Вікторія Маринчук</div>
+                                    </div>
+                                    <div class="item-description quantity">
+                                        <div class="item-description-title">Кількість</div>
+                                        <div class="item-description-name">1</div>
+                                    </div>
+                                    <div class="item-description price">
+                                        <div class="item-description-title">Сума замовлення</div>
+                                        <div class="item-description-price sale">
+                                            <div class="item-price">1499 грн</div>
+                                            <div class="item-price-old">2099 грн</div>
+                                        </div>
+                                    </div>
+                                    <div class="item-description delivery">
+                                        <div class="item-description-title">Доставка</div>
+                                        <div class="item-description-name">Безкоштовно</div>
+                                    </div>
+                                    <div class="item-description total">
+                                        <div class="item-description-title">Загальна сума</div>
+                                        <div class="item-description-total">699 грн</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+{% endblock %}
